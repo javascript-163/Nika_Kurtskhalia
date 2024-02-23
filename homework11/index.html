@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="app-header">Product Filter</h1>
+    
+        <input type="text" class="app-search-input" placeholder="Search" title="Search" onkeyup="searchProd()">
+    
+        <ul class="app-filter">
+            <li class="app-filter-item">All</li>
+            <li class="app-filter-item">Watch</li>
+            <li class="app-filter-item">Shirt</li>
+            <li class="app-filter-item">Gown</li>
+            <li class="app-filter-item">Jewelry</li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="app-card app-card-watch">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/black_watch1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/black_watch2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-img-buttons">
+                <a class="app-card-previous app-card-img-button">&#60;</a>
+                <a class="app-card-next app-card-img-button">&#62;</a>
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Black Watch</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-watch">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/silver_watch1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/silver_watch2.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/silver_watch3.webp" class="app-card-img">
+            </div>
+            <div class="app-card-img-buttons">
+                <a class="app-card-previous app-card-img-button">&#60;</a>
+                <a class="app-card-next app-card-img-button">&#62;</a>
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Silver Watch</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-shirt">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/navy_shirt1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/navy_shirt2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-img-buttons">
+                <a class="app-card-previous app-card-img-button">&#60;</a>
+                <a class="app-card-next app-card-img-button">&#62;</a>
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Navy Shirt</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-shirt">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/black_shirt1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/black_shirt2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-img-buttons">
+                <a class="app-card-previous app-card-img-button">&#60;</a>
+                <a class="app-card-next app-card-img-button">&#62;</a>
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Black Shirt</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-gown">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/pink_gown1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/pink_gown2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Pink Gown</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-gown">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/silver_gown1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/silver_gown2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Silver Gown</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-jewlry">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/ring_jewelry1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/ring_jewelry2.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/ring_jewelry3.webp" class="app-card-img">
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Ring Jewelry</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="app-card app-card-jewlry">
+            <div class="app-card-img-container">
+                <img alt="product" src="./images/necklace_jewelry1.webp" class="app-card-img">
+                <img style="display: none" alt="product" src="./images/necklace_jewelry2.webp" class="app-card-img">
+            </div>
+            <div class="app-card-info">
+                <h5 class="app-card-info-header">Necklace Jewelry</h5>
+                <p class="app-card-info-price">price</p>
+                <button class="app-card-info-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
