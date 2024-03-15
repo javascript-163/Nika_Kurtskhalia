@@ -77,38 +77,7 @@ header {
     font-size: 30px;
 }
 
-@media (max-width: 1025px) {
-    
-    .app-header-burgerIcon-link {
-        display: block;
-    }
 
-    .app-header-menu {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        padding: 16px 56px 16px 16px;
-        z-index: 10;
-    }
-
-    .show {
-        display: block;
-        padding: 30px 50px;
-        background-color: #38598b;
-    }
-
-
-    .app-header-menu-nav-ul {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    .app-header-nav {
-        display: none;
-    }
-    
-}
 
 
 footer {
@@ -258,7 +227,7 @@ footer {
 }
 
 .app-main-content-loadmore {
-    width: 10%;
+    width: 250px;
     height: 70%;
     border-radius: 20px;
     background-color: #a2a8d3;
@@ -426,4 +395,44 @@ footer {
     color: #e7eaf6;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
+}
+
+@media (max-width: 1025px) {
+    
+    .app-header-burgerIcon-link {
+        display: block;
+    }
+
+    .app-header-menu {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 16px 56px 16px 16px;
+        z-index: 10;
+    }
+
+    .show {
+        display: block;
+        padding: 30px 50px;
+        background-color: #38598b;
+    }
+
+    .app-header-logo-text{
+        display: none;
+    }
+
+    .app-aboutus-text p {
+        width: 100%;
+    }
+
+    .app-header-menu-nav-ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .app-header-nav {
+        display: none;
+    }
+    
 }
