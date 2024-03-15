@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="https://kit.fontawesome.com/0e1a1f2a1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <a class="app-header-burgerIcon-link">
+                <i class="fa-solid fa-bars app-header-burgerIcon"></i>
+                <i class="fa-solid fa-xmark app-header-xmarkIcon"></i>
+            </a>
+            <a class="app-header-xIcon-link">
+                <i class="fa-solid fa-xmark app-header-xIcon"></i>
+            </a>
+
+
+            <a href="index.html" class="app-header-logo-link">
+                <i class="app-header-logo fa-solid fa-film"></i>
+                <h2 class="app-header-logo-text">Movies</h2>
+            </a>
+    
+            <nav class="app-header-nav">
+                <ul class="app-header-nav-ul">
+                    <li><a href="index.html" class="app-header-nav-li-link">Home</a></li>
+                    <li><a href="aboutus.html" class="app-header-nav-li-link">About Us</a></li>
+                    <li><a href="contact.html" class="app-header-nav-li-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="app-header-left">
+                <div class="app-header-left">
+                    <a href="login.html" class="app-header-left-link app-header-login">
+                        <i class="app-header-left-link-info fa-solid fa-user-tie"></i>
+                        <span class="app-header-left-link-info">Login</span>
+                    </a>
+                    <a href="registration.html" class="app-header-left-link app-header-register">
+                        <i class="app-header-left-link-info fa-solid fa-arrow-right-to-bracket"></i>
+                        <span class="app-header-left-link-info">Register</span>
+                    </a>
+                    <a class="app-header-left-link app-header-userLink" style="display: none;">
+                        <span class="app-header-left-link-info  app-header-user"></span>
+                    </a>
+                    <a class="app-header-left-link app-header-logout" style="display: none;">
+                        <i class="app-header-left-link-info fa-solid fa-arrow-right-to-bracket"></i>
+                        <span class="app-header-left-link-info">Logout</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="app-header-menu">
+                <nav class="app-header-menu-nav">
+                    <ul class="app-header-menu-nav-ul">
+                        <li><a href="index.html" class="app-header-nav-li-link">Home</a></li>
+                        <li><a href="aboutus.html" class="app-header-nav-li-link">Catalog</a></li>
+                        <li><a href="contact.html" class="app-header-nav-li-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+            <div class="app-form-background">
+                <div  class="app-form-container">
+                    <h2 class="app-form-header">Registration</h2>
+                    <form onsubmit="return false" class="app-form app-registration-form">
+                        <div class="app-form-input-container">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="app-form-input-container">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="app-form-input-container">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="app-form-input-container">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                        <div class="app-form-input-container">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button class="app-form-submit" type="submit">Register</button>
+                    </form>
+                    <p class="app-form-text">Have already an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="app-footer-copyright">&copy; 2024 Movies. All rights reserved.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./scripts/registration.js"></script>
+    
+</body>
+</html>
