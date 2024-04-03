@@ -13,7 +13,7 @@ function registerUser() {
     let password = document.getElementById("password").value;
 
     let usernameValidator = /^\S+$/;
-    let mailValidator = /^([a-z\d\_+.-]+){1,300}@([a-z\d-]+)\.([a-z]+)$/;
+    let mailValidator = /^([a-zA-Z\d\_+.-]+){1,300}@([a-z\d-]+)\.([a-z]+)$/;
     let fullnameValidator = /^([\w]{2,})+\s+([\w\s]{2,})+$/;
     let passwordValidator = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
